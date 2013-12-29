@@ -9,8 +9,8 @@ Vagrant::Config.run do |config|
   config.vm.box_url = "http://www.wilcoxd.com/oss/lucid32_puppet_2.7.11.box"
 
   config.vm.customize do |vm|
-    vm.memory_size = 1024   # 1 GB of memory
-    vm.cpu_count = 3        # yay multiple cores, and an 8 core host
+    vm.memory_size = 512   # 512 MB of memory
+    vm.cpu_count = 1        # yay multiple cores, and an 8 core host
   end
 
   config.vm.provision :puppet,
